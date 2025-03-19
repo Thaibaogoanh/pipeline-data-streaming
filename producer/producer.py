@@ -12,7 +12,7 @@ producer = KafkaProducer(
 
 # Đọc file CSV (đảm bảo file AIR2301.csv nằm trong thư mục được mount vào container)
 try:
-    df = pd.read_csv('D:\Distribute system\pipeline1\data\AIR2301.csv')  # Đảm bảo sử dụng đúng đường dẫn
+    df = pd.read_csv('..\data\AIR2301.csv')  # Đảm bảo sử dụng đúng đường dẫn
     print(f"File {df.shape[0]} rows loaded successfully.")
 except Exception as e:
     print(f"Error loading CSV file: {e}")
