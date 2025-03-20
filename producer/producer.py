@@ -5,7 +5,7 @@ import time
 
 # Cấu hình Kafka producer (lưu ý: sử dụng địa chỉ container 'kafka' thay vì 'localhost')
 producer = KafkaProducer(
-    bootstrap_servers='localhost:9092',
+    bootstrap_servers='localhost:29092',
     value_serializer=lambda v: json.dumps(v).encode('utf-8'),
     request_timeout_ms=120000
 )
